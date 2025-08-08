@@ -15,16 +15,28 @@ function App() {
          <Header />
         <main className="container mx-auto p-4 z-10">
           <div className='bg-white bg-opacity-50'>
+            <section id='intro'>
+
+            </section>
             <Intro />
           </div>
           <div className='bg-white bg-opacity-50'>
-            <Competence />
+            <section id='competence'>
+              <Competence />
+            </section>
+            
           </div>
           <div className='bg-white bg-opacity-50'>
-            <Projet />
+            <section id='projets'>
+              <Projet />
+            </section>
+            
           </div>
           <div className='bg-white bg-opacity-50'>
-            <Contact />
+            <section id='contact'>
+              <Contact />
+            </section>
+            
           </div>
           
           

@@ -18,10 +18,10 @@ const Header = () => {
       {/* Menu pour grand écran et menu mobile en superposition */}
       <nav className={`md:flex ${isOpen ? 'block' : 'hidden'}  absolute  md:static top-16 left-0 w-full md:w-auto bg-gray-200 md:bg-transparent p-4 md:p-0`}>
          <ul className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
-           <li><a href="#intro" className="hover:text-white">A propos</a></li>
-           <li><a href="#competence" className="hover:text-white">Competences</a></li>
-           <li><a href="#projets" className="hover:text-white">Projets</a></li>
-           <li><a href="#contact" className="hover:text-white">Contact</a></li>
+           <li><a href="#intro" className="transition-shadow hover:text-white">A propos</a></li>
+           <li><a href="#competence" className="transition-shadow hover:text-white">Competences</a></li>
+           <li><a href="#projets" className=" transition-shadow hover:text-white">Projets</a></li>
+           <li><a href="#contact" className=" transition-shadow hover:text-white">Contact</a></li>
          </ul>
        </nav>
     </header>
