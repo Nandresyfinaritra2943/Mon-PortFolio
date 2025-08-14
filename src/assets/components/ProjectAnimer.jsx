@@ -19,7 +19,7 @@ function ProjetCarte ({ projet }) {
     },[projet.images.length]);
 
     return (
-        <div className="bg-white p-4 shadow-md rounded-lg transform transition duration-500 hover:scale-105">
+        <div className="bg-white/50 p-4 shadow-md rounded-lg transform transition duration-500 hover:scale-105">
             <div className="w-full h-48 overflow-hidden rounded-md mb-4">
                 <img 
                     src={projet.images[currentImageIndex]} 

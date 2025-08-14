@@ -12,7 +12,7 @@ body {
 }
 
 /* src/index.css ou src/App.css */
-html {
+html,body,section {
   scroll-behavior: smooth;
 }
 

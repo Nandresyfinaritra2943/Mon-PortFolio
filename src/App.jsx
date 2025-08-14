@@ -5,20 +5,22 @@ import Contact from './assets/components/contact'
 import Header from './assets/components/header'
 import Intro from './assets/components/intro'
 import Projet from './assets/components/projet'
+import ParticuleBody from './particlebody'
 
 function App() {
 
   return (
     <>
+      <ParticuleBody />
       <div className='relative'>
         
          <Header />
         <main className="container mx-auto p-4 z-10">
           <div className='bg-white bg-opacity-50'>
             <section id='intro'>
-
+              <Intro />
             </section>
-            <Intro />
+            
           </div>
           <div className='bg-white bg-opacity-50'>
             <section id='competence'>
@@ -50,12 +52,3 @@ function App() {
 }
 
 export default App
-
-{/* <div className="bg-gray-100 min-h-screen">
-      <Header />
-      <main className="container mx-auto p-4">
-        <Hero />
-        <Projects />
-        <Contact />
-      </main>
-    </div> */}

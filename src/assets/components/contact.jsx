@@ -34,8 +34,8 @@ function Contact() {
   // };
 
     return (
-        <section id="contact" className="py-10 bg-gray-100">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">ME CONTACTER</h2>
+        <section id="contact" className="py-10 bg-gray-100/50">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b] ">ME CONTACTER</h2>
       
           {/* <div className="flex bg-white bg-opacity-50 p-2 rounded-lg">
             <div className="w-12 h-12 md:w-23 md:h-23 mx-auto mb-4 overflow-hidden rounded-full shadow-lg">
