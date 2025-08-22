@@ -12,16 +12,12 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
-=======
-
->>>>>>> cb3e42e (feat)
       <ParticuleBody />
       <div className='relative'>
         
          <Header />
         <main className="container mx-auto p-4 z-10">
-<<<<<<< HEAD
+
           <div className='bg-white bg-opacity-50'>
             <section id='intro'>
               <Intro />
@@ -48,8 +44,6 @@ function App() {
           </div>
           
           
-          
-=======
 
             <div >
                   {/* <marquee  direction="right"> <h1>Tongasoa eto @ Page ko ianareo !</h1> </marquee> */}
@@ -79,7 +73,7 @@ function App() {
                 <Contact />
               </section>
             </div>
->>>>>>> cb3e42e (feat)
+
           
             <div>
               <Footer />

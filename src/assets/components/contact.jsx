@@ -10,12 +10,8 @@ function Contact() {
 
     return (
         <section id="contact" className="py-10 bg-gray-100/50">
-<<<<<<< HEAD
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b] ">ME CONTACTER</h2>
-=======
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b]">ME CONTACTER</h2>
->>>>>>> cb3e42e (feat)
-      
+
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b] ">ME CONTACTER</h2>      
 
           <div className="flex flex-wrap justify-center md:justify-around p-4">
           

@@ -85,13 +85,10 @@ function Projet() {
 
   return (
     <section id="projets" className="py-10 bg-gray-100/50 min-h-screen">
-<<<<<<< HEAD
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b] ">MES PROJETS</h2>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3  text-[#1e293b] ">
-=======
+
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b]">MES PROJETS</h2>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 text-[#1e293b]">
->>>>>>> cb3e42e (feat)
+
         {projets.map((projet) => (
           <ProjetCarte key={projet.id} projet={projet} />
         ))}
