@@ -31,8 +31,12 @@ html,body,section {
     height: 100%;
     border-left: 3px solid rgb(243 244 246 / var(--tw-bg-opacity))  ;
     right:-2px;
-     --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246 / var(--tw-bg-opacity)) /* #f3f4f6 */;
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity)) /* #f3f4f6 */;  
+/* 
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 /  var(--tw-bg-opacity)); */
+
     animation: text 4s infinite backwards steps(10);
 }
 @keyframes text{

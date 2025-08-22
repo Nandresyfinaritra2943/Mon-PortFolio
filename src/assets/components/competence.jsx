@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjetCarte from './ProjectAnimer';
 
-// Importez toutes les images nécessaires pour vos projets
+// Importation toutes les images nécessaires pour mon projets
 import projet1_1 from '../../assets/iconLangage/java-script (1).png';
 import projet1_2 from '../../assets/iconLangage/bootstrap.png';
 import projet1_3 from '../../assets/iconLangage/css-3.png';
@@ -35,13 +35,17 @@ function Competence() {
     {
       id: 3,
       title: "Systeme de Gestion de Base de Donnee",
-      images: [projet3_1, projet3_2], // Un projet peut n'avoir qu'une seule image
+      images: [projet3_1, projet3_2], 
       description: "SQLite, Mysql, PostgreSql .",
     },
-    // Ajoutez d'autres projets
+   
   ];
 
   return (
+<<<<<<< HEAD
+=======
+
+>>>>>>> cb3e42e (feat)
     <section id="competence" className="py-10 bg-gray-100/50 min-h-screen ">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b] ">MES COMPETENCES</h2>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3  text-[#1e293b] ">
@@ -50,6 +54,7 @@ function Competence() {
         ))}
       </div>
     </section>
+
   );
 };
 

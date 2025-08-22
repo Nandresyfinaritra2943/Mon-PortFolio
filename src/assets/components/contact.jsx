@@ -8,64 +8,14 @@ import github from "../../assets/iconcontact/github.png";
 
 function Contact() {
 
-    // const [nom, setNom] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [message, setMessage] = useState('');
-    // const [status, setStatus] = useState('');
-
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-  //     setStatus('Envoi en cours...');
-
-  //     try {
-  //       const response = await axios.post('http://127.0.0.1:8000/api/contact', {
-  //         nom,
-  //         email,
-  //         message,
-  //       });
-
-  //       setStatus(response.data.message);
-  //       setNom('');
-  //       setEmail('');
-  //       setMessage('');
-  //     } catch (error) {
-  //       setStatus('Erreur lors de l\'envoi du message.');
-  //     }
-  // };
-
     return (
         <section id="contact" className="py-10 bg-gray-100/50">
+<<<<<<< HEAD
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b] ">ME CONTACTER</h2>
+=======
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6  text-[#64748b]">ME CONTACTER</h2>
+>>>>>>> cb3e42e (feat)
       
-          {/* <div className="flex bg-white bg-opacity-50 p-2 rounded-lg">
-            <div className="w-12 h-12 md:w-23 md:h-23 mx-auto mb-4 overflow-hidden rounded-full shadow-lg">
-              <a href="https://www.facebook.com/mandresy.rz.2025" target="_blank" rel="noopener noreferrer">
-                <img src={fb} alt="Mon image de profil" className="w-full h-full object-cover" />
-              </a>
-            </div>
-            <div className="w-12 h-12 md:w-23 md:h-23 mx-auto mb-4 overflow-hidden rounded-full shadow-lg">
-                <a href="mailto:jeneranandresy@gmail.com" target="_blank" rel="noopener noreferrer" >
-                  <img src={mail} alt="Mon image de profil" className="w-full h-full object-cover" />
-                </a>
-            </div>
-            <div className="w-12 h-12 md:w-23 md:h-23 mx-auto mb-4 overflow-hidden rounded-full shadow-lg">
-                <a href="https://www.linkedin.com/in/nandresy-finaritra-65b756353" target="_blank"  > 
-                  <img src={linkdin} alt="Mon image de profil" className="w-full h-full object-cover" /> 
-                </a>
-            </div>
-            <div className="w-12 h-12 md:w-23 md:h-23 mx-auto mb-4 overflow-hidden rounded-full shadow-lg">
-                <a href="https://wa.me/261387330627" target="_blank" > 
-                  <img src={watsapp} alt="Mon image de profil" className="w-full h-full object-cover" /> 
-                </a>
-            </div>
-           
-            <div className="w-12 h-12 md:w-23 md:h-23 mx-auto mb-4 overflow-hidden rounded-full shadow-lg text-black">
-              <a href="https://github.com/Nandresyfinaritra2943" target="_blank" > 
-                <img src={github} alt="Mon image de profil" className="w-full h-full object-cover" /> 
-              </a>
-            </div>
-        
-          </div> */}
 
           <div className="flex flex-wrap justify-center md:justify-around p-4">
           

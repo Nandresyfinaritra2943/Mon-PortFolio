@@ -4,7 +4,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+<<<<<<< HEAD
     <header className="flex justify-between items-center px-4 py-2 bg-gray-100/90  text-gray-400 shadow-md sticky top-0 z-50">
+=======
+    <header className="flex justify-between items-center px-4 py-2 bg-gray-100/90 text-gray-400 shadow-md sticky top-0 z-50">
+>>>>>>> cb3e42e (feat)
       
       {/* Logo ou nom  bg-slate-500 bg-green-300*/}
       <button className=' py-2 px-4 bg-slate-500  rounded-lg text-xl text-white font-semibold'>

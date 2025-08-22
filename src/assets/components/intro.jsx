@@ -24,10 +24,10 @@ function Intro () {
 
       <section id='intro' className="bg-gray-100/50 text-center py-10 md:py-5 ">
 
-        <div className=' p-3 rounded-lg' > {/* Optionnel: pour améliorer la lisibilité du texte sur l'image */}
+        {/* <div className=' p-3 rounded-lg' > 
           {' '}
           <span className="inline-block animate-[color-change_5s_infinite_alternate] animate-[bounce-slow_3s_infinite_ease-in-out]">Bienvenue sur mon site web !</span>
-        </div>
+        </div> */}
 
         <div className="w-32 h-32 md:w-64 md:h-64 mx-auto mb-4 overflow-hidden rounded-full shadow-lg">
           <img src={monImage} alt="Mon image de profil" className="w-full h-full object-cover" />

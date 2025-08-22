@@ -8,10 +8,13 @@ function ParticuleBody () {
         await loadSlim(engine);
     }, []);
 
+<<<<<<< HEAD
     // const particleLoaded = useCallback(async (container) => {
     //     console.log(container);
     // }, []);
 
+=======
+>>>>>>> cb3e42e (feat)
     const options = useMemo(
         () => ({
             background: {
@@ -66,13 +69,21 @@ function ParticuleBody () {
                     density: {
                         enable: true,
                     },
+<<<<<<< HEAD
                     value: 800,
+=======
+                    value: 200,
+>>>>>>> cb3e42e (feat)
                 },
                 opacity: {
                     value: 0.5,
                 },
                 shape: {
+<<<<<<< HEAD
                     type: "square", // Forme des particules (circle, square, triangle, etc.)
+=======
+                    type: "circle", // Forme des particules (circle, square, triangle, etc.)
+>>>>>>> cb3e42e (feat)
                 },
                 size: {
                     value: { min: 1, max: 5 },
