@@ -16,34 +16,7 @@ function App() {
       <div className='relative'>
         
          <Header />
-        <main className="container mx-auto p-4 z-10">
-
-          <div className='bg-white bg-opacity-50'>
-            <section id='intro'>
-              <Intro />
-            </section>
-            
-          </div>
-          <div className='bg-white bg-opacity-50'>
-            <section id='competence'>
-              <Competence />
-            </section>
-            
-          </div>
-          <div className='bg-white bg-opacity-50'>
-            <section id='projets'>
-              <Projet />
-            </section>
-            
-          </div>
-          <div className='bg-white bg-opacity-50'>
-            <section id='contact'>
-              <Contact />
-            </section>
-            
-          </div>
-          
-          
+        <main className="container mx-auto p-4 z-10">         
 
             <div >
                   {/* <marquee  direction="right"> <h1>Tongasoa eto @ Page ko ianareo !</h1> </marquee> */}
@@ -73,7 +46,6 @@ function App() {
                 <Contact />
               </section>
             </div>
-
           
             <div>
               <Footer />
