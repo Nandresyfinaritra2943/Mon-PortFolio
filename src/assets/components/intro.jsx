@@ -21,8 +21,9 @@ function Intro () {
           }
         `}
       </style>
+      {/* bg-gray-100/50 */}
 
-      <section id='intro' className="bg-gray-100/50 text-center py-10 md:py-5 ">
+      <section id='intro' className=" text-center py-10 md:py-5 ">
 
         {/* <div className=' p-3 rounded-lg' > 
           {' '}

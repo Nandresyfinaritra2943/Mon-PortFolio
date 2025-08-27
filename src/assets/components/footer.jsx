@@ -1,7 +1,7 @@
 
 function Footer () {
     return (
-        <section id="contact" className="py-10 bg-gray-100/65">
+        <section id="contact" className="py-10 bg-gray-100/65 mt-7 rounded-lg">
             
              <h2 className="text-blue-400"> &copy; Nandresy Finaritra 2025 ! Tout droit reserver. </h2>
         </section>
