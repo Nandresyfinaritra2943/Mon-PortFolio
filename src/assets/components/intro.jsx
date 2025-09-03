@@ -1,5 +1,5 @@
 import React from 'react';
-import monImage from '../../assets/sary.jpeg'
+import monImage from '../../assets/image/sariko.jpg'
 import '../../App.css'
 
 function Intro () {

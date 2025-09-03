@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,28 +7,42 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-
-    <header className="flex justify-between items-center px-4 py-2 bg-gray-100/90  text-gray-400 shadow-md sticky top-0 z-50">
+    <header className="flex justify-between items-center px-4 py-2 bg-gray-100/90 text-gray-400 shadow-md sticky top-0 z-50">
       
-      {/* Logo ou nom  bg-slate-500 bg-green-300*/}
-      <button className=' py-2 px-4 bg-slate-500  rounded-lg text-xl text-white font-semibold'>
-         <p>F</p>
+      {/* Logo ou nom */}
+      <button className='py-2 px-4 bg-slate-500 rounded-lg text-xl text-white font-semibold'>
+        <p>F</p>
       </button>
-     
-    
-      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      
+      {/* Bouton pour le menu mobile */}
+      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden z-30">
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
       </button>
 
-      {/* Menu pour grand écran et menu mobile en superposition */}
-      <nav className={`md:flex ${isOpen ? 'block' : 'hidden'}  absolute  md:static top-16 left-0 w-full md:w-auto bg-gray-200 md:bg-transparent p-4 md:p-0`}>
-         <ul className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
-           <li><a href="#intro" onClick={closeMenu} className="transition-shadow hover:text-white">A propos</a></li>
-           <li><a href="#competence" onClick={closeMenu} className="transition-shadow hover:text-white">Competences</a></li>
-           <li><a href="#projets" onClick={closeMenu} className=" transition-shadow hover:text-white">Projets</a></li>
-           <li><a href="#contact" onClick={closeMenu} className=" transition-shadow hover:text-white">Contact</a></li>
-         </ul>
-       </nav>
+      {/* Menu pour les grands écrans */}
+      <nav className="hidden md:block">
+        <ul className="flex space-x-4">
+          <li><Link to="intro" spy={true} smooth={true} duration={1500} className="transition-shadow hover:text-white cursor-pointer">À propos</Link></li>
+          <li><Link to="competence" spy={true} smooth={true} duration={1500} className="transition-shadow hover:text-white cursor-pointer">Compétences</Link></li>
+          <li><Link to="projets" spy={true} smooth={true} duration={1500} className="transition-shadow hover:text-white cursor-pointer">Projets</Link></li>
+          <li><Link to="contact" spy={true} smooth={true} duration={1500} className="transition-shadow hover:text-white cursor-pointer">Contact</Link></li>
+        </ul>
+      </nav>
+
+      {/* Menu mobile en superposition */}
+      <nav className={`
+        md:hidden ${isOpen ? 'block' : 'hidden'}
+        absolute top-16 left-0 w-full bg-gray-200 p-4 z-20
+      `}>
+        <ul className="flex flex-col space-y-2">
+          <li><Link to="intro" spy={true} smooth={true} duration={5500} onClick={closeMenu} className="transition-shadow hover:text-white cursor-pointer">À propos</Link></li>
+          <li><Link to="competence" spy={true} smooth={true} duration={5500} onClick={closeMenu} className="transition-shadow hover:text-white cursor-pointer">Compétences</Link></li>
+          <li><Link to="projets" spy={true} smooth={true} duration={5500} onClick={closeMenu} className="transition-shadow hover:text-white cursor-pointer">Projets</Link></li>
+          <li><Link to="contact" spy={true} smooth={true} duration={5500} onClick={closeMenu} className="transition-shadow hover:text-white cursor-pointer">Contact</Link></li>
+        </ul>
+      </nav>
     </header>
   );
 };
